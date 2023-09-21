@@ -13,22 +13,19 @@
         <h1>Verificador de Idade</h1>
     </header>
     <section>
-        <div id="formulario">
-            <form action="script.js" method="post" autocomplete="on">
-                <div>
-                    <label for="inumber">Ano de Nascimento:
-                         <input type="number" name="" id="inumber">
-                    </label>
-                    <br>
-                    <label for="isexo">Sexo: 
-                        <input type="radio" name="sexo" id="isexofem"> Feminino
-                        <input type="radio" name="sexo" id="isexomas"> Masculino
-                    </label>
-                    <br>
-                    <input id="ibutton" type="button" value="Verificar" onclick="verificar()">
-                </div>
-            </form>
+        <div>
+                <label for="inumber">Ano de Nascimento: </label>
+                <input type="number" name="" id="inumber">
+                <br>
+            <p>Sexo:
+                    <input type="radio" name="sexo" id="isexo"> 
+                    <label for="isexo"> Feminino </label>
+                    <input type="radio" name="sexo" id="isexo"> 
+                    <label for="isexo"> Masculino </label>
+            </p>
+                <input id="ibutton" type="button" value="Verificar" onclick="verificar()">
         </div>
+
         <div id="resultado">Preencha os dados acima para ver o resultado!</div>
     </section>
     <footer>
