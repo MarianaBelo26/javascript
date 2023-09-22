@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(155, 169, 225);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+header{
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.515);
+}
+
+section{
+    padding: 20px 10px;
+    background-color: white;
+    width: 80vw;
+    margin: auto;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.552);
+}
+
+div > input{
+   margin: 10px;
+}
+
+footer{
+    text-align: center;
+    font-size: 1.3em;
+}
+
+footer > p > a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer > p > a:hover{
+    color: black;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 768px){
+    section{
+        width: 400px;
+    }
+    
+}
