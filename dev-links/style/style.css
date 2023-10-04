@@ -1,0 +1,171 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?família=Inter:wght@300; 400&display=swap');
+
+/*#267365, #F2CB05, #F29F05, #F28705, #991095*/
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Inter', sans-serif;
+}
+
+:root{
+	--background: white ;
+	--text-color: black;
+	--hover-color-links: #F29F05;
+	--border-color-links: #F28705;
+	--border-img: #267365;
+	--color-icons: #991095;
+	--hover-color-medias: #991095;
+	--color-button: #F28705;
+	--color-span: #991095;
+}
+.dark{
+	--background: black;
+	--text-color: white;
+	--hover-color-links: #F29F05;
+	--border-color-links: #F28705;
+	--border-img: #991095;
+	--color-icons: #991095;
+	--hover-color-medias: #991095;
+	--color-button: white;
+	--color-span: #267365;
+}
+
+body{
+	background: var(--background);
+}
+
+#profile img{
+	display: block;
+	width: 100px;
+	border-radius: 50%;
+	border: 2px solid var(--border-img);
+	margin: 24px auto 0px;
+}
+
+p{
+	padding: 5px 0px 24px;
+	color: var(--text-color);
+	text-align: center;
+}
+
+
+#switch{
+	position: relative;
+	width: 64px;
+	margin: auto;
+}
+
+#switch button{
+	z-index: 0;
+	position: absolute;
+	top: 50%;
+	left: 0px;
+	transform: translateY(-50%);
+	
+	width: 34px;
+	height: 34px;
+	border-radius: 50%;
+	border: none;
+	background-color: var(--color-button);
+	animation: slide-out .3s forwards;
+}
+
+.dark #switch button{
+	background-color: var(--color-button);
+	
+	animation: slide-in .3s;
+}
+
+#switch span{
+	display: block;
+	width: 64px;
+	height: 24px;
+	border: 2px solid var(--color-span);
+	border-radius: 9999px;
+}
+#switch span img{
+	border-radius: 9999px;
+}
+
+#links ul{
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	justify-content: center;
+	align-items: center;
+	padding: 24px;
+	list-style: none;
+}
+
+#links ul li {
+	width: 70vw;
+	padding: 16px;
+	border: 1px solid var(--border-color-links);
+	text-align: center;
+	border-radius: 10px;
+}
+
+#links ul li:hover{
+	background-color: var(--hover-color-links);
+}
+
+#links ul li a{
+	text-decoration: none;
+	color: var(--text-color);
+}
+
+#medias{
+	display: flex;
+	gap: 16px;
+	justify-content: center;
+	align-items: center;
+	
+	padding: 16px;
+}
+
+#medias a ion-icon{
+	color: var(--color-icons);
+	width: 25px;
+    height: 25px;
+	padding: 5px;
+}
+
+#medias a ion-icon:hover{
+	background-color: var(--hover-color-medias);
+	border-radius: 50%;
+	color: white;
+}
+
+footer{
+	text-align: center;
+	padding: 16px;
+}
+
+footer a{
+	color: var(--text-color);
+}
+
+@media screen and (min-width: 768px){
+	#links ul li {
+	width: 350px;
+	}
+}
+
+@keyframes slide-in{
+	from{
+		left: 50%;
+	}
+	to{
+		right: 0px;
+	}
+}
+
+@keyframes slide-out{
+	from{
+		right: 0px;
+	}
+	to{
+		left: 50%;
+	}
+}
