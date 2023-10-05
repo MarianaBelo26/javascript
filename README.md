@@ -1,6 +1,6 @@
 <h1 align="center">Repositório de JavaScript</h1>
 
- ## 📲 Acesse
+ ## 📲Acesse
  
  <strong>Minhas redes:</strong>
 <br>
