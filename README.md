@@ -4,9 +4,9 @@
  
  <strong>Minhas redes:</strong>
 <br>
- <a href='https://linkedin.com/in/marianabelo26/' target='_blank'>LinkedIn</a>
+ [LinkedIn](https://linkedin.com/in/marianabelo26/)
  <br>
- <a href='https://instagram.com/mariana_.belo' target='_blank'>Instagram</a>
+ [Instagram](https://instagram.com/mariana_.belo)
  
 <h2>Conheça meus projetos</h2>
 
@@ -62,7 +62,7 @@ Tabuada é um site com desenvolvimento de para calcular a tabuada a partir do n�
 
 Esses projetos foram desenvolvidos com as seguintes tecnologias:
 
--JavaScript
+- JavaScript
 - HTML
 - CSS
 - Git e Github
