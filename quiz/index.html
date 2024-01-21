@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>QUIZ | Do you know?</title>
+</head>
+<body>
+   
+    <div class="intro py-3 bg-warning text-center">
+        <div class="container">
+            <h2 class="text-light display-3 my-4">QUIZ</h2>
+        </div>
+    </div>
+
+    <div class="final-score-container text-center d-none">
+        <div class="container-lead">
+            <p>You got 
+                <span class="text-warning display-4 p-3">0%</span>on the quiz!
+            </p>
+        </div>  
+    </div>
+	
+	<div class='popup-wrapper'>
+		<div class='container-restart-popup d-none'>
+			<div class='restart-popup'>
+				<h2 class='question-popup lead font-weight-normal'>Would you like going back to the beginning?</h2>
+				<button class="yes-button-popup btn bg-warning text-dark my-4 mx-2">Yes</button>
+				<button class="no-button-popup btn bg-dark text-light my-4 mx-2">No</button>
+			</div>
+		</div>
+	</div>
+	
+    <div class="quiz py-4 bg-dark ">
+        <div class="container">
+            <div class="inition-page">
+                <h2 class="my-5 text-white">Are you prepared??</h2>
+                <button class="button-init-quiz text-white">Let's go!</button>
+            </div>
+
+            <div class="questions">
+                <form class="quiz-form text-light d-none">
+                    <div class="q1 my-5">
+                        <p class="title-questions lead font-weight-normal">1.What is the capital of Finland?</p>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input
+                                type="radio" name="inputQuestion1" value="A" checked> Helsinki
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion1" value="B"> Canberra
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion1" value="C"> Moscow
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion1" value="D"> London
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="q2 my-5 ">
+                        <p class="lead font-weight-normal">2. What language is spoken in Brazil?</p>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion2" value="A" checked checked>  English
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion2" value="B">  French
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion2" value="C">  Spanish
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion2" value="D">  Portuguese
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="q3 my-5 ">
+                        <p class="lead font-weight-normal">3. How many keys are there on a piano?</p>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion3" value="A" checked checked>  87
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion3" value="B">  88
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion3" value="C">  89
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion3" value="D">  90
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="q4 my-5 ">
+                        <p class="lead font-weight-normal">4. What is the best-selling novel of all time?</p>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion4" value="A" checked checked>  Don Quixote
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion4" value="B">  Pride and Prejudice
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion4" value="C">  Wuthering Heights
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion4" value="D">  Lord of the Rings
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="q5 my-5 ">
+                        <p class="lead font-weight-normal">5. Which planet has the most moons?</p>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion5" value="A" checked checked>  
+                                Mercury
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion5" value="B">  Uranus
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion5" value="C">  Jupiter
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion5" value="D">  Saturn
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="q6 my-5 ">
+                        <p class="lead font-weight-normal">6. What part of a plant conducts photosynthesis?</p>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion6" value="A" checked checked>  Root
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion6" value="B">  Branch
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion6" value="C">  Leaf
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion6" value="D">  Trunk
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="q7 my-5 ">
+                        <p class="lead font-weight-normal">7. Where is the smallest bone in the human body located?</p>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion7" value="A" checked checked>  Ear
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion7" value="B">  Arm
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion7" value="C">  Foot
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion7" value="D">  Knee
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="q8 my-5 ">
+                        <p class="lead font-weight-normal">8. How many Pirates of the Caribbean films have been released?</p>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion8" value="A" checked checked>  Two
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion8" value="B">  Five
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion8" value="C">  Seven
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion8" value="D">  Nine
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="q9 my-5 ">
+                        <p class="lead font-weight-normal">9. Who discovered penicillin?</p>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion9" value="A" checked checked>  Alexander Fleming
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion9" value="B">  Robert Hooke
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion9" value="C">  Charles Darwin
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion9" value="D">  Rachel Carson
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="q10 my-5 ">
+                        <p class="lead font-weight-normal">10. Divorced, beheaded, died, divorced, beheaded, survived – who was Henry VIII's last wife?</p>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion10" value="A" checked checked>  Anne Boleyn
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion10" value="B">  Anne of Cleves
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion10" value="C">  Catherine Parr
+                            </label>
+                        </div>
+                        <div class="form-check my-2 text-white">
+                            <label>
+                                <input type="radio" name="inputQuestion10" value="D">  Catherine of Aragon
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="text-center">
+                        <button class="button-submit-answers btn bg-warning text-light">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
