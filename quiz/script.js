@@ -4,24 +4,19 @@ const initionPage = document.querySelector('.inition-page')
 const finalResult = document.querySelector('.final-score-container')
 
 
-const correctAnswers = ['A', 'D','B','A','D','C','A','B','A','C']
+const correctAnswers = ['A','D','B','A','D','C','A','B','A','C']
 
 let score = 0
 
-buttonInitQuiz.addEventListener('click', ()=>{
+const appearDisappearButton = () =>{
     initionPage.classList.add('d-none')
-    form.classList.remove('d-none')
-})
-
-const getUserAnswers = () =>{
-	let userAnswers = []
+    form.classList.remove('d-none')}
 	
-	correctAnswers.forEach((_,index) =>{
-		const userAnswer = form[`inputQuestion${index + 1}`].value
-		userAnswers.push(userAnswer)
-	})
-	return userAnswers
-}
+buttonInitQuiz.addEventListener('click', appearDisappearButton)
+
+const getUserAnswers = () => correctAnswers.map((_,index) => 
+form[`inputQuestion${index + 1}`].value)
+
 
 const calculateUserScore = (userAnswers) =>{
 	userAnswers.forEach((userAnswer, index) =>{
@@ -57,23 +52,25 @@ const showRestartPopup = () =>{
 		const yesButtonPopup = document.querySelector('.yes-button-popup')
 		const noButtonPopup = document.querySelector('.no-button-popup')
 		
-		restartPopup.classList.remove('d-none')
-		popupWrapper.style.display = 'block'
-
-			
-		yesButtonPopup.addEventListener('click', () =>{
+		const appearDisappearButtonYes = () =>{
 			restartPopup.classList.add('d-none')
 			finalResult.classList.add('d-none')
 			initionPage.classList.remove('d-none')
 			form.classList.add('d-none')
 			popupWrapper.style.display = 'none'
-		})
-			
-		noButtonPopup.addEventListener('click', () =>{
+		}
+		const appearDisappearButtonNo = () =>{
 			restartPopup.classList.add('d-none')
 			popupWrapper.style.display = 'none'
-		})
-	}, 2200)
+		}
+		
+		restartPopup.classList.remove('d-none')
+		popupWrapper.style.display = 'block'
+		
+		yesButtonPopup.addEventListener('click', appearDisappearButtonYes)	
+		noButtonPopup.addEventListener('click', appearDisappearButtonNo)
+	
+	}, 2350)
 }
 
 
