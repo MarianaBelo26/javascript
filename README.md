@@ -19,6 +19,15 @@
 
 O DevLinks é um agregador de links para usar como cartão de visitas online, desenvolvido durante o curso da Rocketseat.
 <hr>
+<h3 align="center">Projeto <a href='https://marianabelo26.github.io/javascript/quiz/index.html' target='_blank'>Quiz</a></h3>
+<p align="center">
+  <img alt="projeto Quiz" src="quiz.jpg" width="30%">
+</p>
+
+## 💻 Projeto
+
+O Quiz é um quiz simples com questões de conhecimentos gerais, uma apresentação animada do score, com rolagem de página, e um popup para voltar ao início do quiz, desenvolvido sozinha baseado em um mini projeto desenvolvido em um curso de JavaScript.
+<hr>
 <h3 align="center">Projeto <a href='https://marianabelo26.github.io/javascript/hora-do-dia/index.html' target='_blank'>Hora do Dia</a></h3>
 <p align="center">
   <img alt="projeto Hora do Dia" src="hora.jpg" width="30%">
